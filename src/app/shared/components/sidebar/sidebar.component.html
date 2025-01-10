@@ -5,8 +5,8 @@
     <hr class="text-white">
 
     <div class="list-group list-reset">
-        <button class="list-group-item-action list-group-item">
-            Valorant
+        <button *ngFor="let tag of tagsHistory" class="list-group-item-action list-group-item">
+            {{ tag | titlecase }}
         </button>
     </div>
 </div>
