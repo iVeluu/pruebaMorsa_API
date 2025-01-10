@@ -15,5 +15,9 @@ export class SidebarComponent {
     return this.giftsService.tagsHistory;
   }
 
+  searchTag(tag: string) {
+    this.giftsService.searchTags(tag);
+  }
+
 
 }

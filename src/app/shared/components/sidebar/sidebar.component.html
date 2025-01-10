@@ -5,7 +5,7 @@
     <hr class="text-white">
 
     <div class="list-group list-reset">
-        <button *ngFor="let tag of tagsHistory" class="list-group-item-action list-group-item">
+        <button *ngFor="let tag of tagsHistory" class="list-group-item-action list-group-item" (click)="searchTag(tag)">
             {{ tag | titlecase }}
         </button>
     </div>

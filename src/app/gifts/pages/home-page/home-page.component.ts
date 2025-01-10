@@ -1,3 +1,4 @@
+import { GiftsService } from './../../services/gifts.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomePageComponent {
 
+  constructor( private giftsServices : GiftsService) { }
+
+  get getGifList() {
+    return this.giftsServices.gifList;
+  }
 }
